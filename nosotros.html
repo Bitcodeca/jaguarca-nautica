@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Chrome, Firefox OS, Opera and Vivaldi -->
+    <meta name="theme-color" content="#2D75B8">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2D75B8">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2D75B8">
+
+    <title>Jaguarca Nautica | Nosotros</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="icon" type="image/gif" href="img/favicon.gif" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" />
+    <link rel=stylesheet type=text/css href=css/bootstrap.min.css />
+    <link rel=stylesheet type=text/css href=https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel=stylesheet type=text/css href=css/style.css />
+    <script type=text/javascript src=https://code.jquery.com/jquery-2.1.1.min.js></script>
+    <style>
+        #load_screen {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: 9999999999
+        }
+        
+        #loading {
+            position: relative;
+            top: 50%;
+            -ms-transform: translate(0%, -50%);
+            -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%)
+        }
+        
+        .alinear {
+            position: relative;
+            -ms-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            left: 50%;
+            width: 64px
+        }
+    </style>
+    <script>
+        y = 0;
+        function x() { 
+            var a = document.getElementById("load_screen"); jQuery(a).fadeOut("fast", function () { document.body.removeChild(a) }); y++;
+        }
+        func_x = setTimeout(x, 3000);
+        jQuery(window).load(function () {
+            if (y === 0) { clearTimeout(func_x); x(); }
+        });
+    </script>
+</head>
+
+<body ng-app="contactApp">
+        <div id=load_screen>
+            <div id=loading>
+                <div class=alinear>
+                    <div class="progress">
+                      <div class="indeterminate"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    <header>
+        <div class="uppernav white hide-on-med-and-down">
+            <div class="container">
+                <div class="upper-logo left">
+                    <img src="img/logo.svg" class="responsive-img" alt="logo" height="54px">
+                </div>
+                <div class="upper-nav right">
+
+                    <span class=" grey-text lighten-1 font1p1 verticalalignmiddle">LLÁMANOS: 0251-254-5454 </span>
+
+                    <span class="paddingleft15 bold center-align font1p5 verticalalignmiddle grey-text lighten-1"> | </span>
+
+                    <a class="upper-redes waves-effect waves-light grey-text lighten-1 center-align upper-facebook" href="https://www.facebook.com/Jaguarca-Nautica-242917656158969/" target="_blank">
+                        <i class="fa fa-facebook-f fa-2x" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="upper-redes waves-effect waves-light grey-text lighten-1 center-align upper-instagram" href="https://www.instagram.com/jaguarcanautica/" target="_blank">
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="upper-redes waves-effect waves-light grey-text lighten-1 center-align upper-twitter" href="https://twitter.com/Jaguar_Nautica" target="_blank">
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                    </a>
+
+
+                    <a class="upper-redes waves-effect waves-light grey-text lighten-1 center-align upper-google">
+                        <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-wrapper z-depth-1">
+                <div class="container">
+                <a href="index.html" class="brand-logo">
+                    <img src="img/logoletra.svg" class="responsive-img" alt="logo" height="54px">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse waves-effect waves-red color1">
+                    <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li class="active"><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="galeria.html">GALERÍA</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#" class="center-align margintop10 logosidenav"><img src="img/logo.svg" class="responsive-img"></a></li>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li class="active"><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="galeria.html">GALERÍA</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="fixed-action-btn toolbar hide-on-med-and-up">
+        <a class="btn-floating btn-redes fondo3">
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </a>
+        <ul>
+            <li class="waves-effect waves-light facebook">
+                <a href="#!"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+            </li>
+            <li class="waves-effect waves-light instagram">
+                <a href="#!"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+            </li>
+            <li class="waves-effect waves-light twitter">
+                <a href="#!"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+            </li>
+            <li class="waves-effect waves-light google">
+                <a href="#!"><i class="fa fa-google-plus fa-3x" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div>
+
+
+    <main class="marginmenos48px">
+        <div class="parallax-container parallaxinicio3">
+            <div class="parallax"><img src="img/c7.jpg"></div>            
+        </div>
+        <div class="fondo2">
+            <div class="container">
+                <div class="row center-align white-text margintop25">
+                    <div class="col-xs-6 col-sm-3" data-aos="fade-right">
+                        <img src="img/Wharf.svg" class="responsive-img" alt="logo" width="72px">
+                        <h4 class="center-align margintop0">Fabricación</h4>
+                    </div>
+                    <div class="col-xs-6 col-sm-3" data-aos="fade-down">
+                        <img src="img/sailin-boat.svg" class="responsive-img" alt="logo" width="72px">
+                        <h4 class="center-align margintop0">Venta</h4>
+                    </div>
+                    <div class="col-xs-6 col-sm-3" data-aos="fade-up">
+                        <img src="img/radio.svg" class="responsive-img" alt="logo" width="72px">
+                        <h4 class="center-align margintop0">Materiales pesqueros</h4>
+                    </div>
+                    <div class="col-xs-6 col-sm-3" data-aos="fade-left">
+                        <img src="img/compass.svg" class="responsive-img" alt="logo" width="72px">
+                        <h4 class="center-align margintop0">Equipos para la pesca</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 margintop25">
+                        <h1 class="center-align bold" data-aos="fade-down">JAGUARCA <b class="color3">NAUTICA</b></h1>
+                        <p class="center-align" data-aos="fade-up">Somos una empresa encargada de la construcción completa y reparación  de buques pesqueros. Ubicados estratégicamente en el muelle pesquero de la hermosa isla de Margarita en el estado Nueva Esparta, obteniendo de esta manera un acceso directo a los fértiles mares de nuestra nación, cuentan con una trayectoria de 3 años, obteniendo una distinción en la construcción de buques duraderos y de alta calidad.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-8 margintop25" data-aos="fade-right">
+                        <div class="row">
+                            <h2>
+                                Fabricación y venta de buques pesqueros 
+                                <br>
+                                <b>Venta de materiales y equipos del área marina.</b>
+                            </h2>
+                        </div>
+                        <div class="row">
+                            <p class="paddingleft15 paddingright15">A través del tiempo se ha logrado aumentar el standard en la construcción de buques teniendo como norte la misión de proporcionar y ser pilar fundamental en la industria pesquera de Venezuela donde nuestra fortaleza competitiva se caracteriza por prestar un servicio integral y especializado en la construcción y reparación de buques, en la venta de equipos y accesorios para pesca además de brindar un soporte técnico oportuno para lograr de esta manera  una industria marítima eficaz, de calidad y competitiva.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 margintop50" data-aos="fade-left">
+                        <div class="">
+                            <img src="img/logo.svg" class="responsive-img margintop25" alt="logo" height="54px">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-4 margintop25">
+                        <div class="row" data-aos="fade-left">
+                            <h3 class="right-align">
+                                RESPONSABILIDAD, CALIDAD
+                                <br>
+                                <b>Y EXCELENTE SERVICIO.</b>
+                            </h3>
+                        </div>
+                        <div class="row" data-aos="fade-left">
+                            <p class="right-align paddingleft15 paddingright15">JAGUARCA NAUTICA mantiene los más altos estándares en construcción y reparación de buques al utilizar madera proveniente de las mejores aserraderos de Venezuela y Brasil, la selección de esta se realiza bajo estrictos controles para mantener los niveles de calidad, siendo las maderas duras más utilizadas para la fabricación de la quilla que es la pieza de apoyo de todo el armazón Roble y el Algarrobo, así mismo las maderas semiduras para la fabricación de la cabina y cubierta son el Pardillo, Laurel y Samán..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 margintop25">
+                        <div class="row" data-aos="fade-right">
+                            <h3 class="left-align">
+                                Con más de <b>3 años de experiencia.</b>
+                            </h3>
+                        </div>
+                        <div class="row" data-aos="fade-right">
+                            <p class="left-align paddingleft15 paddingright15">Para las embarcaciones se le ensamblan cabinas las cuales están realizadas para mantener una tripulación de entre 8 a 12 marinos quienes contaran con todos los equipos de navegación como GPS marino, radio HF y VHF, ecosonda con transducer de bronce y radares. Estas cabinas contralarán buques pesqueros o de carga de entre 14 a 23 metros de eslora, manteniendo el tamaño de la manga y el puntal variante dependiendo del diseño y tamaño final.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax-container parallaxinicio2 margintop25">
+            <div class="overlayazul">
+
+                <div class="container margintop25 white-text">
+                    <div class="row">
+                        <h3 class="right-align"><i class="fa fa-quote-left" aria-hidden="true"></i> ELIGE UN TRABAJO QUE TE GUSTE Y<b class="color2"> NO TENDRÁS QUE TRABAJAR NI UN DÍA DE TU VIDA. </b></h3>
+                        <h3 class="right-align bold">- Confucio</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="parallax"><img src="img/3.JPG"></div>
+            
+        </div>
+
+    </main>
+
+
+    <footer class="page-footer fondo2 color3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <h5 class="">Dirección</h5>
+                    <p class="white-text"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Calle principal de Chacachacare al lado del muelle pesquero, dentro del Astillero y Varadero del Caribe, galpón 1 Municipio Tubores, Edo. Nueva Esparta, Venezuela</p>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+                    <h5 class="">Contáctanos</h5>
+                    <p class="white-text margintop10"><i class="fa fa-envelope" aria-hidden="true"></i> info@jaguarca.com</p>
+                    <p class="white-text margintop10"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> 0251 254-5454</p>
+                    <p class="white-text "><i class="fa fa-mobile fa-2x" aria-hidden="true"></i> 0414 500-9999</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h5 class="">Síguenos</h5>
+                    <ul>
+                        <li>
+                            <a class="white-text" href="https://www.facebook.com/Jaguarca-Nautica-242917656158969/" target="_blank">
+                                <p><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i> Jaguarca Nautica</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="https://www.instagram.com/jaguarcanautica/" target="_blank">
+                                <p><i class="fa fa-instagram fa-lg" aria-hidden="true"></i> @jaguarcanautica</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="https://twitter.com/Jaguar_Nautica" target="_blank">
+                                <p><i class="fa fa-twitter fa-lg" aria-hidden="true"></i> @Jaguarca_Nautica</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="#!">
+                                <p><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i> JaguarcaNautica</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class=footer>
+            <div class=container>
+                <div class="row marginbot0">
+                    <div class=col-md-12>
+                        <div class=center-align>
+                            <p class="copyright center-align small"> Todos los Derechos Reservados | Desarrollado por
+                                <a href=http://bitcodeweb.com/ target=_blank class="verticalaligntextbottom"><img src=img/logobitcodeb.svg height="22px" width="auto"></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            AOS.init();
+            $('.slider').slider({full_width: true});
+            $(".button-collapse").sideNav();
+            $('.parallax').parallax();
+        });
+    </script>
+</body>
+
+</html>
